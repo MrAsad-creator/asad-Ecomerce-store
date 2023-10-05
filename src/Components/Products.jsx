@@ -1,7 +1,7 @@
-import axios from "axios";
-import React, { useState, useEffect } from "react";
+
+import React, { useEffect } from "react";
 import { Card,Button } from "react-bootstrap";
-import Product from './Product.module.css';
+// import Product from './Product.module.css';
 import { useDispatch,useSelector } from "react-redux";
 import { add } from "./Store/CartSlice";
 import { gettingProducts } from "./Store/ProductSlice";
@@ -25,7 +25,7 @@ const Products = () => {
 
     // FetchingData();
     dispatch(gettingProducts())
-  }, []);
+  }, [dispatch]);
 
   // Dispatch function
   const addToCart=(curElmt)=>{
