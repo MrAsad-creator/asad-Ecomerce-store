@@ -23,6 +23,9 @@ const NavComponent = () => {
           <Nav.Link to="/products" as={Link}>
             Products
           </Nav.Link>
+          <Nav.Link to="/products" as={Link}>
+            new Achor
+          </Nav.Link>
         </Nav>
         <Navbar.Toggle />
         <Form className={Styles.formBox}>
